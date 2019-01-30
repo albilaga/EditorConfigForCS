@@ -74,7 +74,7 @@ dotnet_naming_symbols.public_symbols.applicable_kinds           = property,field
 dotnet_naming_symbols.public_symbols.applicable_accessibilities = public,internal,protected
 
 dotnet_naming_rule.public_members_must_be_capitalized.style     = pascal_case_style
-dotnet_naming_rule.public_members_must_be_capitalized.severity  = error
+dotnet_naming_rule.public_members_must_be_capitalized.severity  = warning
 
 # Public interfaces must be capitalized (publid_interface_must_be_capitalized)
 dotnet_naming_rule.publid_interface_must_be_capitalized.symbols = public_interfaces
@@ -82,7 +82,7 @@ dotnet_naming_symbols.public_interfaces.applicable_kinds        = interface
 dotnet_naming_symbols.public_interfaces.applicable_accessibilities = *
 
 dotnet_naming_rule.publid_interface_must_be_capitalized.style   = pascal_case_interface_style
-dotnet_naming_rule.publid_interface_must_be_capitalized.severity= error
+dotnet_naming_rule.publid_interface_must_be_capitalized.severity= warning
 
 # Private fields must be capitalized with _ (private_fields_must_be_capitalized)
 dotnet_naming_rule.private_fields_must_be_capitalized.symbols   = private_fields
@@ -90,7 +90,7 @@ dotnet_naming_symbols.private_fields.applicable_kinds           = property,field
 dotnet_naming_symbols.private_fields.applicable_accessibilities = private
 
 dotnet_naming_rule.private_fields_must_be_capitalized.style     = private_pascal_case_style
-dotnet_naming_rule.private_fields_must_be_capitalized.severity  = error
+dotnet_naming_rule.private_fields_must_be_capitalized.severity  = warning
 
 # Method must be capitalized (methods_must_be_capitalized)
 dotnet_naming_rule.methods_must_be_capitalized.symbols          = methods
@@ -98,7 +98,7 @@ dotnet_naming_symbols.methods.applicable_kinds                  = method,class,n
 dotnet_naming_symbols.methods.applicable_accessibilities        = *
 
 dotnet_naming_rule.methods_must_be_capitalized.style            = pascal_case_style
-dotnet_naming_rule.methods_must_be_capitalized.severity         = error
+dotnet_naming_rule.methods_must_be_capitalized.severity         = warning
 
 # Parameters must be camelCase (params_must_be_camel)
 dotnet_naming_rule.params_must_be_camel.symbols                 = params
@@ -106,7 +106,7 @@ dotnet_naming_symbols.params.applicable_kinds                   = paramater
 dotnet_naming_symbols.params.applicable_accessibilities         = *
 
 dotnet_naming_rule.params_must_be_camel.style                   = parameter_style
-dotnet_naming_rule.params_must_be_camel.severity                = error
+dotnet_naming_rule.params_must_be_camel.severity                = warning
 
 ###############################
 # C# Code Style Rules         #
@@ -149,17 +149,17 @@ csharp_style_inlined_variable_declaration = true:warning
 ###############################
 
 # New line preferences
-csharp_new_line_before_open_brace = all:error
-csharp_new_line_before_else = true:error
-csharp_new_line_before_catch = true:error
-csharp_new_line_before_finally = true:error
-csharp_new_line_before_members_in_object_initializers = true:error
-csharp_new_line_before_members_in_anonymous_types = true:error
-csharp_new_line_between_query_expression_clauses = true:error
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true:warning
+csharp_new_line_before_catch = true:warning
+csharp_new_line_before_finally = true:warning
+csharp_new_line_before_members_in_object_initializers = true:warning
+csharp_new_line_before_members_in_anonymous_types = true:warning
+csharp_new_line_between_query_expression_clauses = true:warning
 
 # Indentation preferences
-csharp_indent_case_contents = true:error
-csharp_indent_switch_labels = true:error
+csharp_indent_case_contents = true:warning
+csharp_indent_switch_labels = true:warning
 csharp_indent_labels = no_change
 
 # Space preferences
@@ -177,7 +177,7 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false:warnin
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = false:warning
-csharp_preserve_single_line_blocks = true:error
+csharp_preserve_single_line_blocks = true:warning
 
 ##################################
 # Visual Basic Code Style Rules  #
