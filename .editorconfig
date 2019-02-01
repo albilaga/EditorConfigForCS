@@ -94,7 +94,7 @@ dotnet_naming_rule.private_fields_must_be_capitalized.severity  = warning
 
 # Method must be capitalized (methods_must_be_capitalized)
 dotnet_naming_rule.methods_must_be_capitalized.symbols          = methods
-dotnet_naming_symbols.methods.applicable_kinds                  = method,class,namespace,struct,enum
+dotnet_naming_symbols.methods.applicable_kinds                  = method,class,struct,enum
 dotnet_naming_symbols.methods.applicable_accessibilities        = *
 
 dotnet_naming_rule.methods_must_be_capitalized.style            = pascal_case_style
